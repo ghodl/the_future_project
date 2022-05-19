@@ -277,3 +277,4 @@ the_future_project/media/
 .env
 .envs/*
 !.envs/.local/
+fabfile.py
