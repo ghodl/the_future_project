@@ -31,7 +31,7 @@ certificatesResolvers:
 http:
   routers:
     web-secure-router:
-      rule: "Host(`beeola.com`) || Host(`www.beeola.com`)"
+      rule: "Host(`beeola.me`) || Host(`www.beeola.me`)"
       entryPoints:
         - web-secure
       middlewares:
@@ -42,7 +42,7 @@ http:
         certResolver: letsencrypt
 
     flower-secure-router:
-      rule: "Host(`beeola.com`)"
+      rule: "Host(`beeola.me`)"
       entryPoints:
         - flower
       service: flower
